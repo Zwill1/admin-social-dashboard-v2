@@ -1,8 +1,25 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Version 2.0
 
-Currently, two official plugins are available:
+Social Dash is a project built with react and vite for a social dashboard. User is required to log into their account. Data is loaded through a JSON file to display all metrics of social media accounts. Social Dash supports dark theme mode, saving the theme mode through local storage and dropdowns for the user when logged in/ logged out. Loader is provided when data is being loaded into the application and is fully responsive.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+App provides the functionality to check your own profile, account settings, integrations and so on.
+
+Log in and theming is done through the UseContext with React.
+
+# Dependency
+
+Vitest - Testing framework
+
+Axios - Promise based HTTP client for the browser and node.js
+
+React Router Dom -  Used for routes
+
+# To be installed
+
+Material Icons
+
+Tailwindcss
+
+Eslint
