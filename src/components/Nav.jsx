@@ -68,17 +68,17 @@ const Nav = () => {
 
                       {/* placing in a dropdown menu on click. Use state to set the arrow */}
                       <ul className={!isDropDown ? "hidden" : "absolute w-[185px] bg-gray-100 float-left text-center top-[50px] pt-1 pb-1" } style={{backgroundColor: theme.backgroundColor, color: theme.color}}>
-                  {/* Adding dashboard to navigation if user goes back to homepage. */}
+                      {/* Adding dashboard to navigation if user goes back to homepage. */}
                         <li className="p-1">
                           <Link to="/dashboard" className="nav-link">
                             Dashboard
                           </Link>
                         </li>
-                        {/* <li className="p-1">
+                        <li className="p-1">
                           <Link to="/profile" className="nav-link">
                             Profile
                           </Link>
-                        </li> */}
+                        </li>
                         <li className="p-1">
                           <Link to="/" className="nav-link" onClick={logout}>
                             Logout
@@ -133,11 +133,11 @@ const Nav = () => {
                   Dashboard
                 </Link>
               </li>
-              {/* <li className="border-b-2 border-zinc-300 w-10/12 mx-auto pt-4 pb-4">
+              <li className="border-b-2 border-zinc-300 w-10/12 mx-auto pt-4 pb-4">
                 <Link to="/profile" onClick={handleClose}>
                   Profile
                 </Link>
-              </li> */}
+              </li>
               <li className="border-b-2 border-zinc-300 w-10/12 mx-auto pt-4 pb-4">
                 <Link to="/" onClick={logout}>
                   Logout
