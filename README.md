@@ -16,10 +16,10 @@ Axios - Promise based HTTP client for the browser and node.js
 
 React Router Dom -  Used for routes
 
-# To be installed
+Tailwindcss
+
+# Other
 
 Material Icons
 
-Tailwindcss
-
-Eslint
+Eslint - May not need due to Vistest
