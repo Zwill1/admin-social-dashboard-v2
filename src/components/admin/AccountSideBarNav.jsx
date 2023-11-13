@@ -8,7 +8,7 @@ import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
 import { Link } from "react-router-dom";
 import { useAuth } from '../../context/AuthContext';
 
-export default function ProfileSideBar() {
+export default function AccountSideBar() {
   
   const {logout} = useAuth();
   return (
@@ -18,7 +18,7 @@ export default function ProfileSideBar() {
             <Link to="/profile"><PersonIcon /> Profile</Link>
             </li>
             <li className='leading-10'>
-            <Link to="account"><SettingsIcon /> Account Settings</Link>
+            <Link to="/account"><SettingsIcon /> Account Settings</Link>
             </li>
             <li className='leading-10'><NotificationsActiveIcon /> Activity</li>
             <li className='leading-10'><GroupsIcon /> Socials</li>

@@ -4,9 +4,10 @@ import Layout from './components/Layout'
 import NotFound from './components/NotFound';
 import Login from './components/Login';
 import Home from './components/admin/Home';
-import Dashboard from './components/admin/Dashboard';
+import DashboardPage from './components/admin/DashboardPage';
 import Profile from './components/admin/Profile';
 import ProtectedRoute from './components/admin/ProtectedRoute';
+import Account from './components/admin/Account';
 
 function App() {
 
@@ -22,7 +23,13 @@ function App() {
 
         <Route path="/dashboard" element={
         <ProtectedRoute>
-          <Dashboard />
+          <DashboardPage />
+        </ProtectedRoute>} 
+        />
+
+        <Route path="/account" element={
+        <ProtectedRoute>
+          <Account />
         </ProtectedRoute>} 
         />
 
