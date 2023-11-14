@@ -2,6 +2,8 @@ import { useContext } from "react";
 import { useAuth } from "../../context/AuthContext";
 import { ThemeContext } from "../../Themes/Theme";
 import AccountSideBar from "./AccountSideBar";
+import ProfileHeadBanner from "./ProfileHeadBanner";
+import ProfileAvatar from "./ProfileAvatar";
 
 export default function Profile() {
 
@@ -13,7 +15,14 @@ export default function Profile() {
     <>
       <section style={{backgroundColor: theme.backgroundColor, color: theme.color}} className="flex">
         <AccountSideBar />
-        <p>Profile</p>
+        <div className="w-10/12">
+          <div className="w-full">
+            <ProfileHeadBanner />
+          </div>
+          <div className="w-full">
+            <ProfileAvatar />
+          </div>
+        </div>
       </section>
     </>
   )
