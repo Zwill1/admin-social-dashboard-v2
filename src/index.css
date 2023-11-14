@@ -1,3 +1,100 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.fb-icon-color{
+    color: #3b5998;
+}
+
+.instagram-icon-color{
+    color: #d62976;
+}
+
+.twitter-icon-color{
+    color: #1DA1F2;
+}
+
+.youtube-icon-color{
+    color: #c4302b;
+}
+
+.fb-border-color {
+    border-top: 4px solid #3b5998;
+}
+
+.instagram-border-color {
+    border-top: 4px solid #d62976;
+}
+
+.twitter-border-color {
+    border-top: 4px solid #1DA1F2;
+}
+
+.youtube-border-color {
+    border-top: 4px solid #c4302b;
+}
+
+.light-mode {
+    color: #000;
+}
+
+.light-mode-card-bg {
+    background-color: #f2f2f2;
+}
+
+.dark-mode {
+    color: #fff;
+}
+
+.darkModeBody {
+    background-color: #1d202b;
+}
+
+.darkModeHeader {
+    background-color: #fff!important;
+    color: #000;
+}
+
+.darkModeHeaderText {
+    color: #fff!important;
+}
+
+.darkModeSubText {
+    color: #fff!important;
+}
+
+.dark-mode-card-bg {
+    background-color: #262b42;
+}
+
+.positive-rating {
+    color: #4e8b8d;
+}
+
+.negative-rating {
+    color: #d8435e;
+}
+
+.loader {
+    width: 45px;
+    aspect-ratio: 0.75;
+    --c: no-repeat linear-gradient(theme(colors.stone.800) 0 0);
+    background: var(--c) 0% 50%, var(--c) 50% 50%, var(--c) 100% 50%;
+    background-size: 20% 50%;
+    animation: loading 1s infinite linear;
+  }
+
+  @keyframes loading {
+    20% {
+      background-position: 0% 0%, 50% 50%, 100% 50%;
+    }
+    40% {
+      background-position: 0% 100%, 50% 0%, 100% 50%;
+    }
+    60% {
+      background-position: 0% 50%, 50% 100%, 100% 0%;
+    }
+    80% {
+      background-position: 0% 50%, 50% 50%, 100% 100%;
+    }
+  }
