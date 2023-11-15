@@ -4,12 +4,27 @@ import { ThemeContext } from "../../Themes/Theme";
 import AccountSideBar from "./AccountSideBar";
 import ProfileHeadBanner from "./ProfileHeadBanner";
 import ProfileAvatar from "./ProfileAvatar";
+import useFetch from "./hooks/useFetch";
+import Loader from "../../ui/Loader";
 
 export default function Profile() {
 
   const { isAuthenticated } = useAuth();
   console.log("this is the profile page. true or false: " + isAuthenticated);
   const [{theme}] = useContext(ThemeContext);
+
+
+    const {data, loading, error } = useFetch("src/components/admin/data/SocialData.json");
+    // When getting data, set to "loading".
+    if (loading) return <Loader />;
+  
+    if (data === null)
+      return <div>No data available. Please try again later.</div>;
+  
+    // Return error in console if one shows up
+    if (error) console.log("there is an error " + error);
+
+    console.log("this is the data " + data[0].instagram_name);
 
   return (
     <>
