@@ -23,6 +23,8 @@ function reducer(state, action) {
 const FAKE_USER = {
   name: "Admin",
   email: "admin@example.com",
+  fullName: "John Smith",
+  userId: "jsmith001",
   password: "password",
   avatar: "https://i.pravatar.cc/100?u=zz",
 };
