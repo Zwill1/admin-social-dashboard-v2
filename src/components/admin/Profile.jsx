@@ -6,6 +6,7 @@ import ProfileHeadBanner from "./ProfileHeadBanner";
 import ProfileAvatar from "./ProfileAvatar";
 import useFetch from "./hooks/useFetch";
 import Loader from "../../ui/Loader";
+import ProfileBasicInfo from "./ProfileBasicInfo";
 
 export default function Profile() {
 
@@ -36,6 +37,14 @@ export default function Profile() {
           </div>
           <div className="w-full">
             <ProfileAvatar />
+          </div>
+          <div className="w-full flex mt-10">
+            <div className="w-6/12">
+              <ProfileBasicInfo />
+            </div>
+            <div className="w-6/12">
+              <ProfileBasicInfo />
+            </div>
           </div>
         </div>
       </section>
