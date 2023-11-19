@@ -7,6 +7,7 @@ import ProfileAvatar from "./ProfileAvatar";
 import useFetch from "./hooks/useFetch";
 import Loader from "../../ui/Loader";
 import ProfileBasicInfo from "./ProfileBasicInfo";
+import ProfileSystemSettings from "./ProfileSystemSettings";
 
 export default function Profile() {
 
@@ -43,7 +44,7 @@ export default function Profile() {
               <ProfileBasicInfo />
             </div>
             <div className="w-6/12">
-              <ProfileBasicInfo />
+              <ProfileSystemSettings />
             </div>
           </div>
         </div>

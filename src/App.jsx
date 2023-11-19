@@ -8,6 +8,7 @@ import DashboardPage from './components/admin/DashboardPage';
 import Profile from './components/admin/Profile';
 import ProtectedRoute from './components/admin/ProtectedRoute';
 import Account from './components/admin/Account';
+import Integration from './components/admin/Integration';
 
 function App() {
 
@@ -36,6 +37,12 @@ function App() {
         <Route path="/profile" element={
         <ProtectedRoute>
           <Profile />
+        </ProtectedRoute>} 
+        />
+
+        <Route path="/integration" element={
+        <ProtectedRoute>
+          <Integration />
         </ProtectedRoute>} 
         />
 

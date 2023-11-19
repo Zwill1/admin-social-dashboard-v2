@@ -22,7 +22,9 @@ export default function AccountSideBar() {
             </li>
             <li className='leading-10'><NotificationsActiveIcon /> Activity</li>
             <li className='leading-10'><GroupsIcon /> Socials</li>
-            <li className='leading-10'><IntegrationInstructionsIcon /> Integration</li>
+            <li className='leading-10'>
+            <Link to="/integration"><IntegrationInstructionsIcon /> Integration</Link>
+            </li>
             <li className='leading-10'>
             <Link to="/" onClick={logout}><LogoutIcon /> Sign Out</Link>
             </li>

@@ -7,29 +7,6 @@ export default function ProfileBasicInfo() {
 
   return (
     <>
-      {/* <div className="w-full p-10">
-        <h2 className="text-center">Basic Information</h2>
-        <table className="table-auto w-full text-black bg-gray-200 border-collapse border border-slate-600">
-            <tbody className="p-4">
-                <tr>
-                <td className="">Full Name</td>
-                <td className="">{user.fullName}</td>
-                </tr>
-                <tr>
-                <td className="">Email Address</td>
-                <td className="">{user.email}</td>
-                </tr>
-                <tr>
-                <td className="">Login Name</td>
-                <td className="">{user.name}</td>
-                </tr>
-                <tr>
-                <td className="">Password</td>
-                <td><input className="disabled:opacity-75" type="password" value="password" disabled/></td>
-                </tr>
-            </tbody>
-        </table>
-      </div> */}
       <div className="px-6 text-1xl font-bold uppercase">Account Information</div>
       <div className="relative overflow-x-auto sm:rounded-lg p-6">
           <table className="w-full text-sm text-left rtl:text-right text-black dark:text-black">
