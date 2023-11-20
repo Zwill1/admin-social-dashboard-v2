@@ -8,6 +8,9 @@ import AccountSideBar from "./AccountSideBar";
 import ProfileHeadBanner from "./ProfileHeadBanner";
 import ProfileAvatar from "./ProfileAvatar";
 import IntegrationInstagram from "./IntegrationInstagram";
+import IntegrationYoutube from "./IntegrationYoutube";
+import IntegrationTwitter from "./IntegrationTwitter";
+import IntegrationFacebook from "./IntegrationFacebook";
 
 export default function Integration() {
 
@@ -40,12 +43,20 @@ export default function Integration() {
                 <ProfileAvatar />
                 </div>
                 <div className="w-full flex mt-10">
-                <div className="w-6/12">
-                    <IntegrationInstagram data={data} />
+                  <div className="w-6/12">
+                      <IntegrationInstagram />
+                  </div>
+                  <div className="w-6/12">
+                      <IntegrationYoutube />
+                  </div>
                 </div>
-                <div className="w-6/12">
-                    ff
-                </div>
+                <div className="w-full flex mt-10">
+                  <div className="w-6/12">
+                      <IntegrationTwitter />
+                  </div>
+                  <div className="w-6/12">
+                      <IntegrationFacebook />
+                  </div>
                 </div>
             </div>
         </section>
