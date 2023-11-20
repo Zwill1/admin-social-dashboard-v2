@@ -1,8 +1,7 @@
 import PersonIcon from '@mui/icons-material/Person';
-import SettingsIcon from '@mui/icons-material/Settings';
+// import SettingsIcon from '@mui/icons-material/Settings';
 import IntegrationInstructionsIcon from '@mui/icons-material/IntegrationInstructions';
 import LogoutIcon from '@mui/icons-material/Logout';
-import GroupsIcon from '@mui/icons-material/Groups';
 import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
 
 import { Link } from "react-router-dom";
@@ -15,13 +14,14 @@ export default function AccountSideBar() {
     <>
         <ul>
             <li className='leading-10'>
-            <Link to="/profile"><PersonIcon /> Profile</Link>
+            <Link to="/dashboard"><NotificationsActiveIcon /> Dashboard</Link>
             </li>
             <li className='leading-10'>
-            <Link to="/account"><SettingsIcon /> Account Settings</Link>
+            <Link to="/profile"><PersonIcon /> Profile</Link>
             </li>
-            <li className='leading-10'><NotificationsActiveIcon /> Activity</li>
-            <li className='leading-10'><GroupsIcon /> Socials</li>
+            {/* <li className='leading-10'>
+            <Link to="/account"><SettingsIcon /> Account Settings</Link>
+            </li> */}
             <li className='leading-10'>
             <Link to="/integration"><IntegrationInstructionsIcon /> Integration</Link>
             </li>

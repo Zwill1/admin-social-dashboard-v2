@@ -1,9 +1,13 @@
+import { useContext } from "react";
 import Loader from "../../ui/Loader";
 import useFetch from "./hooks/useFetch";
+import { ThemeContext } from "../../Themes/Theme";
 
 export default function IntegrationInstagram() {
 
     const {data, loading, error } = useFetch("src/components/admin/data/SocialData.json");
+
+    const [{isDark}] = useContext(ThemeContext);
     // When getting data, set to "loading".
     if (loading) return <Loader />;
 
@@ -19,7 +23,7 @@ export default function IntegrationInstagram() {
     <div className="relative overflow-x-auto sm:rounded-lg p-6">
         <table className="w-full text-sm text-left rtl:text-right text-black dark:text-black">
             <tbody>
-                <tr className="bg-white border-b dark:bg-white dark:border-gray-700">
+                <tr className={isDark ? "border-b dark:bg-white dark:border-gray-700" : "border-b dark:bg-gray-200 dark:border-gray-700"}>
                     <th scope="row" className="px-10 py-4 font-bold text-black whitespace-nowrap dark:text-black">
                     Instagram Name
                     </th>
@@ -27,7 +31,7 @@ export default function IntegrationInstagram() {
                     {data[0].instagram_name}
                     </td>
                 </tr>
-                <tr className="bg-white border-b dark:bg-white dark:border-gray-700">
+                <tr className={isDark ? "border-b dark:bg-white dark:border-gray-700" : "border-b dark:bg-gray-200 dark:border-gray-700"}>
                     <th scope="row" className="px-10 py-4 font-bold text-gray-900 whitespace-nowrap dark:text-black">
                     Instagram ID
                     </th>
@@ -35,7 +39,7 @@ export default function IntegrationInstagram() {
                     {data[0].instagram_id}
                     </td>
                 </tr>
-                <tr className="bg-white border-b dark:bg-white dark:border-gray-700">
+                <tr className={isDark ? "border-b dark:bg-white dark:border-gray-700" : "border-b dark:bg-gray-200 dark:border-gray-700"}>
                     <th scope="row" className="px-10 py-4 font-bold text-gray-900 whitespace-nowrap dark:text-black">
                     Instagram Followers
                     </th>
