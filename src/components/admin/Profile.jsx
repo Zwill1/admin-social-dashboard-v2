@@ -30,20 +30,20 @@ export default function Profile() {
 
   return (
     <>
-      <section style={{backgroundColor: theme.backgroundColor, color: theme.color}} className="flex">
+      <section style={{backgroundColor: theme.backgroundColor, color: theme.color}} className="lg:flex">
         <AccountSideBar />
-        <div className="w-10/12">
+        <div className="w-full lg:w-10/12">
           <div className="w-full">
             <ProfileHeadBanner />
           </div>
           <div className="w-full">
             <ProfileAvatar />
           </div>
-          <div className="w-full flex mt-10">
-            <div className="w-6/12">
+          <div className="w-full xl:flex mt-10">
+            <div className="w-full xl:w-6/12">
               <ProfileBasicInfo />
             </div>
-            <div className="w-6/12">
+            <div className="w-full xl:w-6/12">
               <ProfileSystemSettings />
             </div>
           </div>

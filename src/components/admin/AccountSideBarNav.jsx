@@ -13,19 +13,16 @@ export default function AccountSideBar() {
   return (
     <>
         <ul>
-            <li className='leading-10'>
+            <li className='leading-10 py-1 border-b-2 border-gray-600'>
             <Link to="/dashboard"><NotificationsActiveIcon /> Dashboard</Link>
             </li>
-            <li className='leading-10'>
+            <li className='leading-10 py-1 border-b-2 border-gray-600'>
             <Link to="/profile"><PersonIcon /> Profile</Link>
             </li>
-            {/* <li className='leading-10'>
-            <Link to="/account"><SettingsIcon /> Account Settings</Link>
-            </li> */}
-            <li className='leading-10'>
+            <li className='leading-10 py-1 border-b-2 border-gray-600'>
             <Link to="/integration"><IntegrationInstructionsIcon /> Integration</Link>
             </li>
-            <li className='leading-10'>
+            <li className='leading-10 py-1 border-b-2 border-gray-600'>
             <Link to="/" onClick={logout}><LogoutIcon /> Sign Out</Link>
             </li>
         </ul>

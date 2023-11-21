@@ -8,7 +8,7 @@ export default function ProfileAvatar() {
   return (
     <>
       <div className="w-full text-center h-26 flex justify-center">
-        <img src={user.avatar} className="rounded-full justify-center -m-10" />
+        <img src={user.avatar} className="rounded-full justify-center -m-10 border-white border-2" />
       </div>
       <div className="w-full text-center mt-10">
         <p className="font-black">{user.fullName}</p>
