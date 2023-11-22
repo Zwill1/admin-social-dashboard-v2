@@ -33,28 +33,28 @@ export default function Integration() {
   return (
     
     <>
-        <section style={{backgroundColor: theme.backgroundColor, color: theme.color}} className="flex">
+        <section style={{backgroundColor: theme.backgroundColor, color: theme.color}} className="lg:flex">
             <AccountSideBar />
-            <div className="w-10/12">
+            <div className="w-full lg:w-10/12">
                 <div className="w-full">
                 <ProfileHeadBanner />
                 </div>
                 <div className="w-full">
                 <ProfileAvatar />
                 </div>
-                <div className="w-full flex mt-10">
-                  <div className="w-6/12">
+                <div className="w-full xl:flex mt-10">
+                  <div className="w-full xl:w-6/12">
                       <IntegrationInstagram />
                   </div>
-                  <div className="w-6/12">
+                  <div className="w-full xl:w-6/12">
                       <IntegrationYoutube />
                   </div>
                 </div>
-                <div className="w-full flex mt-10">
-                  <div className="w-6/12">
+                <div className="w-full xl:flex mt-10">
+                  <div className="w-full xl:w-6/12">
                       <IntegrationTwitter />
                   </div>
-                  <div className="w-6/12">
+                  <div className="w-full xl:w-6/12">
                       <IntegrationFacebook />
                   </div>
                 </div>

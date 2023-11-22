@@ -7,7 +7,6 @@ import Home from './components/admin/Home';
 import DashboardPage from './components/admin/DashboardPage';
 import Profile from './components/admin/Profile';
 import ProtectedRoute from './components/admin/ProtectedRoute';
-import Account from './components/admin/Account';
 import Integration from './components/admin/Integration';
 
 function App() {
@@ -25,12 +24,6 @@ function App() {
         <Route path="/dashboard" element={
         <ProtectedRoute>
           <DashboardPage />
-        </ProtectedRoute>} 
-        />
-
-        <Route path="/account" element={
-        <ProtectedRoute>
-          <Account />
         </ProtectedRoute>} 
         />
 

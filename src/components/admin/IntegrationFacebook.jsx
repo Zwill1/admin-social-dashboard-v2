@@ -23,26 +23,26 @@ export default function IntegrationFacebook() {
             <table className="w-full text-sm text-left rtl:text-right text-black dark:text-black">
                 <tbody>
                     <tr className={isDark ? "border-b dark:bg-white dark:border-gray-700" : "border-b dark:bg-gray-200 dark:border-gray-700"}>
-                        <th scope="row" className="px-10 py-4 font-bold text-black whitespace-nowrap dark:text-black">
+                        <th scope="row" className="px-4 lg:px-10 py-4 font-bold text-black whitespace-nowrap dark:text-black">
                         Facebook Name
                         </th>
-                        <td className="px-8 py-5">
+                        <td className="px-4 lg:px-8 py-5">
                         {data[0].facebook_name}
                         </td>
                     </tr>
                     <tr className={isDark ? "border-b dark:bg-white dark:border-gray-700" : "border-b dark:bg-gray-200 dark:border-gray-700"}>
-                        <th scope="row" className="px-10 py-4 font-bold text-gray-900 whitespace-nowrap dark:text-black">
+                        <th scope="row" className="px-4 lg:px-10 py-4 font-bold text-gray-900 whitespace-nowrap dark:text-black">
                         Facebook ID
                         </th>
-                        <td className="px-8 py-5">
+                        <td className="px-4 lg:px-8 py-5">
                         {data[0].facebook_id}
                         </td>
                     </tr>
                     <tr className={isDark ? "border-b dark:bg-white dark:border-gray-700" : "border-b dark:bg-gray-200 dark:border-gray-700"}>
-                        <th scope="row" className="px-10 py-4 font-bold text-gray-900 whitespace-nowrap dark:text-black">
+                        <th scope="row" className="px-4 lg:px-10 py-4 font-bold text-gray-900 whitespace-nowrap dark:text-black">
                         Facebook Followers
                         </th>
-                        <td className="px-8 py-5">
+                        <td className="px-4 lg:px-8 py-5">
                         {data[0].facebook_followers}
                         </td>
                     </tr>
