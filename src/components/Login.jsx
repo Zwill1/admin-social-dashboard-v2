@@ -39,7 +39,7 @@ export default function Login() {
             onSubmit={handleSubmit}
             className={!isDark ? "bg-gray-100 py-10 px-10 w-10/12 lg:w-1/2 rounded-2xl" : "bg-black py-10 px-10 w-10/12 lg:w-1/2 rounded-2xl"}
           >
-            <h1 className="text-center font-bold text-2xl md:text-3xl uppercase pb-2">Login with the form below:</h1>
+            <h1 className="text-center font-bold text-2xl md:text-3xl uppercase pb-2">Social Dash Login</h1>
             <div className="py-1 flex justify-between flex-wrap">
               <label htmlFor="email" className="w-full lg:w-1/4 font-semibold italic">
                 Email address:
@@ -66,7 +66,7 @@ export default function Login() {
               />
             </div>
 
-            <div className="py-1">
+            <div className="py-1 pt-3">
               <button className={!isDark ? "w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded" : "w-full bg-gray-700 hover:bg-gray-800 text-white font-bold py-1 px-4 rounded"}>
                 <span>Login <LoginIcon /> </span> 
               </button>

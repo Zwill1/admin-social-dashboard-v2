@@ -9,7 +9,7 @@ export default function Footer() {
 
   return (
     <section className={isDark ? "bg-black text-white p-1" : "bg-gray-100 text-black p-1"}> 
-      <p className="text-center">Footer</p>
+      <p className="text-center">&copy; Social Dash 2023</p>
     </section>
   )
 }
