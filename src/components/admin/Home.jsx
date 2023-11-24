@@ -1,3 +1,9 @@
+//icons
+import InstagramIcon from "@mui/icons-material/Instagram";
+import YouTubeIcon from "@mui/icons-material/YouTube";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import FacebookIcon from "@mui/icons-material/Facebook";
+
 export default function Home() {
   return (
     <>
@@ -24,16 +30,24 @@ export default function Home() {
         </div>
       </section>
       <section className="lg:flex">
-        <div className="w-full py-10 px-10">
+        <div className="w-full py-20 px-10">
           <h2 className="text-center text-5xl font-bold">Integration Offered:</h2>
         </div>
       </section>
       <section className="lg:flex">
         <div className="w-full lg:flex">
-          <div className="lg:w-3/12 bg-gray-200 text-center">integration Instagram</div>
-          <div className="lg:w-3/12 bg-gray-400 text-center">integration Youtube</div>
-          <div className="lg:w-3/12 bg-gray-600 text-center">integration Twitter</div>
-          <div className="lg:w-3/12 bg-gray-200 text-center">integration Facebook</div>
+          <div className="lg:w-3/12 instagram-bg-color text-center py-32 text-white">
+            <InstagramIcon style={{fontSize: 100}} />
+          </div>
+          <div className="lg:w-3/12 youtube-bg-color text-center py-32 text-white">
+            <YouTubeIcon style={{fontSize: 100}} />
+          </div>
+          <div className="lg:w-3/12 twitter-bg-color text-center py-32 text-white">
+            <TwitterIcon style={{fontSize: 100}} />
+          </div>
+          <div className="lg:w-3/12 fb-bg-color text-center py-32 text-white">
+            <FacebookIcon style={{fontSize: 100}} />
+          </div>
         </div>
       </section>
     </>

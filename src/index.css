@@ -6,16 +6,32 @@
     color: #3b5998;
 }
 
+.fb-bg-color{
+    background-color: #3b5998;
+}
+
 .instagram-icon-color{
     color: #d62976;
+}
+
+.instagram-bg-color{
+    background-color: #d62976;
 }
 
 .twitter-icon-color{
     color: #1DA1F2;
 }
 
+.twitter-bg-color{
+    background-color: #1DA1F2;
+}
+
 .youtube-icon-color{
     color: #c4302b;
+}
+
+.youtube-bg-color{
+    background-color: #c4302b;
 }
 
 .fb-border-color {
