@@ -3,36 +3,39 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import FacebookIcon from "@mui/icons-material/Facebook";
+import { Link } from "react-router-dom";
+import SocialImage from "../../assets/images/social-media-integration.jpg";
 
 export default function Home() {
   return (
     <>
-      <section className="lg:flex">
-        <div className="w-full lg:w-6/12 bg-gray-800 pt-20 pb-20 px-10">
-          <h1 className="text-5xl font-bold text-center text-white">
+      <section className="lg:flex lg:w-10/12 mx-auto lg:flex-row-reverse">
+        <div className="w-full lg:w-6/12 pt-5 pb-5 px-5 lg:pt-20 lg:pb-20 lg:px-10">
+          <div className="lg:flex justify-center items-center h-full">
+          <img src={SocialImage} className="w-full" />
+          </div>
+        </div>
+        <div className="w-full lg:w-6/12 bg-white pt-5 pb-5 px-5 lg:pt-20 lg:pb-20 lg:px-10">
+          <p className="text-white font-black text-blue-400">Social Media Integration</p>
+          <h1 className="text-5xl font-bold text-black">
             Connect your Social Media with our built in integration tools!
           </h1>
-          <p className="py-4 my-4 text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non porta enim. Pellentesque ac odio in diam semper molestie nec a quam. Donec tempus mi at eros euismod congue. Maecenas vel cursus libero. Praesent eu fringilla sem, nec vulputate neque. Nulla facilisi. Mauris mattis odio ut cursus faucibus. In in augue gravida, tincidunt sem sit amet, dictum eros. Praesent condimentum, magna at euismod auctor, tortor nisl rutrum lorem, eu blandit magna arcu at quam. Pellentesque ut scelerisque metus. </p>
-          <div className="flex mt-4 mb-4">
-            <div className="w-full lg:w-6/12 text-white text-center">
-              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4">Login Now</button>
+          <p className="py-4 my-4 text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non porta enim. Pellentesque ac odio in diam semper molestie nec a quam. Donec tempus mi at eros euismod congue. Maecenas vel cursus libero. Praesent eu fringilla sem, nec vulputate neque. Nulla facilisi. Mauris mattis odio ut cursus faucibus. In in augue gravida, tincidunt sem sit amet, dictum eros. Praesent condimentum, magna at euismod auctor, tortor nisl rutrum lorem, eu blandit magna arcu at quam. Pellentesque ut scelerisque metus. </p>
+          <div className="flex my-8">
+            <div className="w-full lg:w-6/12 text-center">
+              <a href="#learn">
+                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4">Learn More</button>
+              </a>
             </div>
-            <div className="w-full lg:w-6/12 text-white text-center">
-              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4">Login Now</button>
+            <div className="w-full lg:w-6/12 text-center">
+              <a href="#">
+                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4">Contact Us</button>
+              </a>
             </div>
           </div>
-          <h2 className="text-3xl font-bold text-center text-white">How to use this app.</h2>
+          <h2 className="text-sm text-black">An account is needed to access social media integrations. <Link to="/login" className="font-bold text-blue-500">Get started.</Link></h2>
         </div>
-        <div className="w-full lg:w-6/12 bg-gray-200">
-          <div className="lg:flex mt-4 mb-4">
-          <img src="https://placehold.co/600x400" className="w-full" />
-          </div>
-        </div>
-      </section>
-      <section className="lg:flex">
-        <div className="w-full py-20 px-10">
-          <h2 className="text-center text-5xl font-bold">Integration Offered:</h2>
-        </div>
+
       </section>
       <section className="lg:flex">
         <div className="w-full lg:flex">
@@ -47,6 +50,14 @@ export default function Home() {
           </div>
           <div className="lg:w-3/12 fb-bg-color text-center py-32 text-white">
             <FacebookIcon style={{fontSize: 100}} />
+          </div>
+        </div>
+      </section>
+      <section className="w-full bg-gray-200">
+        <div className="lg:flex lg:w-10/12 mx-auto w-full py-5 px-5 lg:py-20 lg:px-10" id="learn">
+          <div>
+            <p className="text-white font-black text-blue-400">Get Real Time Updates & Reports</p>
+            <h2 className="text-5xl font-bold">Integration Offered:</h2>
           </div>
         </div>
       </section>
