@@ -33,7 +33,7 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <h2 className="text-sm text-black">An account is needed to access social media integrations. <Link to="/login" className="font-bold text-blue-500">Get started.</Link></h2>
+          <h2 className="text-sm text-black text-center lg:text-left">An account is needed to access social media integrations. <Link to="/login" className="font-bold text-blue-500">Get started.</Link></h2>
         </div>
       </section>
       <section className="w-full bg-gray-100 pt-10 pb-10 px-10 lg:pt-10 lg:pb-10 lg:px-10">
