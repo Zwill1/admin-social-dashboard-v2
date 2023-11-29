@@ -18,8 +18,8 @@ React Router Dom -  Used for routes
 
 Tailwindcss
 
-# Other
-
 Material Icons
+
+# Other
 
 Eslint - May not need due to Vistest
